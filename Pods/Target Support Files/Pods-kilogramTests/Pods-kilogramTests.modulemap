@@ -1,0 +1,6 @@
+framework module Pods_kilogramTests {
+  umbrella header "Pods-kilogramTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
