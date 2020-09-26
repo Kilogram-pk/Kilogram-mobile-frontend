@@ -65,6 +65,7 @@
 		1828B6D5251DD14D00CAF395 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				186D7631251E0E9800E0764C /* components */,
 				1828B6D7251DD21400CAF395 /* assets */,
 				1828B6D6251DD19800CAF395 /* main */,
 			);
@@ -95,6 +96,13 @@
 				1828B6D9251DD23300CAF395 /* Billabong.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		186D7631251E0E9800E0764C /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 		18A81DF6251B79FC00EB5904 = {
