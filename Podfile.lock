@@ -1,3 +1,32 @@
-PODFILE CHECKSUM: 99920b1dfa553273ee0943f7ca63b448e4cc3925
+PODS:
+  - Pageboy (3.6.1)
+  - SnapKit (5.0.1)
+  - SwipeViewController (2.0)
+  - Tabman (2.9.1):
+    - Pageboy (~> 3.6.0)
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - SnapKit (~> 5.0.0)
+  - SwipeViewController
+  - Tabman (~> 2.9)
+  - XLPagerTabStrip (~> 9.0)
+
+SPEC REPOS:
+  trunk:
+    - Pageboy
+    - SnapKit
+    - SwipeViewController
+    - Tabman
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Pageboy: 29a2d474ad99404b4d77f325e0ab6d705930a4fb
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwipeViewController: 87ac3b72473f2caee7b84a7761c9367501fd557a
+  Tabman: 085d89c65be9e883629bdaf5b1453a6397e57846
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: a151b5d1e24bfc40159ae19f915dd2d200cd7825
 
 COCOAPODS: 1.9.3

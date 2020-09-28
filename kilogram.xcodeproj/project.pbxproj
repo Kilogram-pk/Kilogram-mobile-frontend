@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1828B6DA251DD23300CAF395 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1828B6D9251DD23300CAF395 /* Billabong.ttf */; };
+		18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18668E4F252061DA002214FA /* ForgotPassword.storyboard */; };
+		18881D4B25207BB900449B6A /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18881D4A25207BB900449B6A /* ForgotPassViewController.swift */; };
+		18881D4D25209F9200449B6A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18881D4C25209F9200449B6A /* TabViewController.swift */; };
 		18A81E03251B79FC00EB5904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A81E02251B79FC00EB5904 /* AppDelegate.swift */; };
 		18A81E05251B79FC00EB5904 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A81E04251B79FC00EB5904 /* SceneDelegate.swift */; };
 		18A81E07251B79FC00EB5904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A81E06251B79FC00EB5904 /* ViewController.swift */; };
@@ -16,6 +19,8 @@
 		18A81E0F251B79FD00EB5904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A81E0D251B79FD00EB5904 /* LaunchScreen.storyboard */; };
 		18A81E1A251B79FE00EB5904 /* kilogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A81E19251B79FE00EB5904 /* kilogramTests.swift */; };
 		18A81E2C251B824A00EB5904 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 18A81E2B251B824A00EB5904 /* .gitignore */; };
+		54E82F350749D0C84BF0772B /* Pods_kilogram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F43F8DF615BCE20EF2B3E9 /* Pods_kilogram.framework */; };
+		883F902635AD684A80F1CFDF /* Pods_kilogramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBBBEA449715C42B00F0244 /* Pods_kilogramTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05F62890C35B39298693A22D /* Pods-kilogram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kilogram.release.xcconfig"; path = "Target Support Files/Pods-kilogram/Pods-kilogram.release.xcconfig"; sourceTree = "<group>"; };
+		14A49C1B5A3DA4EA75571CD2 /* Pods-kilogramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kilogramTests.debug.xcconfig"; path = "Target Support Files/Pods-kilogramTests/Pods-kilogramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1828B6D9251DD23300CAF395 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
+		18668E4F252061DA002214FA /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		18881D4A25207BB900449B6A /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		18881D4C25209F9200449B6A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		18881D4E2520A05E00449B6A /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A81DFF251B79FC00EB5904 /* kilogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kilogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A81E02251B79FC00EB5904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A81E04251B79FC00EB5904 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +53,10 @@
 		18A81E19251B79FE00EB5904 /* kilogramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kilogramTests.swift; sourceTree = "<group>"; };
 		18A81E1B251B79FE00EB5904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A81E2B251B824A00EB5904 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		29DB3E2D009F986F5F1AA3F8 /* Pods-kilogramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kilogramTests.release.xcconfig"; path = "Target Support Files/Pods-kilogramTests/Pods-kilogramTests.release.xcconfig"; sourceTree = "<group>"; };
+		70F43F8DF615BCE20EF2B3E9 /* Pods_kilogram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kilogram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97871C96A320320F603F14EE /* Pods-kilogram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kilogram.debug.xcconfig"; path = "Target Support Files/Pods-kilogram/Pods-kilogram.debug.xcconfig"; sourceTree = "<group>"; };
+		EDBBBEA449715C42B00F0244 /* Pods_kilogramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kilogramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E82F350749D0C84BF0772B /* Pods_kilogram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883F902635AD684A80F1CFDF /* Pods_kilogramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +82,7 @@
 		1828B6D5251DD14D00CAF395 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				18668E4D252061A3002214FA /* screens */,
 				186D7631251E0E9800E0764C /* components */,
 				1828B6D7251DD21400CAF395 /* assets */,
 				1828B6D6251DD19800CAF395 /* main */,
@@ -98,9 +116,27 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		18668E4D252061A3002214FA /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				18668E4E252061AE002214FA /* forgotPassword */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		18668E4E252061AE002214FA /* forgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				18668E4F252061DA002214FA /* ForgotPassword.storyboard */,
+				18881D4A25207BB900449B6A /* ForgotPassViewController.swift */,
+			);
+			path = forgotPassword;
+			sourceTree = "<group>";
+		};
 		186D7631251E0E9800E0764C /* components */ = {
 			isa = PBXGroup;
 			children = (
+				18881D4C25209F9200449B6A /* TabViewController.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -112,6 +148,8 @@
 				18A81E01251B79FC00EB5904 /* kilogram */,
 				18A81E18251B79FE00EB5904 /* kilogramTests */,
 				18A81E00251B79FC00EB5904 /* Products */,
+				4450902067AA9A33795E03F5 /* Pods */,
+				BF70582E4C4F58F9ADE74F0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +183,27 @@
 			path = kilogramTests;
 			sourceTree = "<group>";
 		};
+		4450902067AA9A33795E03F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97871C96A320320F603F14EE /* Pods-kilogram.debug.xcconfig */,
+				05F62890C35B39298693A22D /* Pods-kilogram.release.xcconfig */,
+				14A49C1B5A3DA4EA75571CD2 /* Pods-kilogramTests.debug.xcconfig */,
+				29DB3E2D009F986F5F1AA3F8 /* Pods-kilogramTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF70582E4C4F58F9ADE74F0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18881D4E2520A05E00449B6A /* Pageboy.framework */,
+				70F43F8DF615BCE20EF2B3E9 /* Pods_kilogram.framework */,
+				EDBBBEA449715C42B00F0244 /* Pods_kilogramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A81E1E251B79FE00EB5904 /* Build configuration list for PBXNativeTarget "kilogram" */;
 			buildPhases = (
+				57EB28A9E15CE5F42B908F18 /* [CP] Check Pods Manifest.lock */,
 				18A81DFB251B79FC00EB5904 /* Sources */,
 				18A81DFC251B79FC00EB5904 /* Frameworks */,
 				18A81DFD251B79FC00EB5904 /* Resources */,
+				109E65AA5041FDFEA1D1AB3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A81E21251B79FE00EB5904 /* Build configuration list for PBXNativeTarget "kilogramTests" */;
 			buildPhases = (
+				A1754EB5A1283E0349CC0090 /* [CP] Check Pods Manifest.lock */,
 				18A81E11251B79FE00EB5904 /* Sources */,
 				18A81E12251B79FE00EB5904 /* Frameworks */,
 				18A81E13251B79FE00EB5904 /* Resources */,
@@ -230,6 +292,7 @@
 				18A81E0F251B79FD00EB5904 /* LaunchScreen.storyboard in Resources */,
 				18A81E0C251B79FD00EB5904 /* Assets.xcassets in Resources */,
 				1828B6DA251DD23300CAF395 /* Billabong.ttf in Resources */,
+				18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */,
 				18A81E0A251B79FC00EB5904 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,13 +306,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		109E65AA5041FDFEA1D1AB3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kilogram/Pods-kilogram-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kilogram/Pods-kilogram-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kilogram/Pods-kilogram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57EB28A9E15CE5F42B908F18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kilogram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1754EB5A1283E0349CC0090 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kilogramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18A81DFB251B79FC00EB5904 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18881D4B25207BB900449B6A /* ForgotPassViewController.swift in Sources */,
 				18A81E07251B79FC00EB5904 /* ViewController.swift in Sources */,
 				18A81E03251B79FC00EB5904 /* AppDelegate.swift in Sources */,
+				18881D4D25209F9200449B6A /* TabViewController.swift in Sources */,
 				18A81E05251B79FC00EB5904 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +537,7 @@
 		};
 		18A81E1F251B79FE00EB5904 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97871C96A320320F603F14EE /* Pods-kilogram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -425,6 +555,7 @@
 		};
 		18A81E20251B79FE00EB5904 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F62890C35B39298693A22D /* Pods-kilogram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +573,7 @@
 		};
 		18A81E22251B79FE00EB5904 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A49C1B5A3DA4EA75571CD2 /* Pods-kilogramTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -463,6 +595,7 @@
 		};
 		18A81E23251B79FE00EB5904 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29DB3E2D009F986F5F1AA3F8 /* Pods-kilogramTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
