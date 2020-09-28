@@ -20,6 +20,7 @@ class TabViewController: TabmanViewController {
         descriptionLabel.text = "Enter your username or email address and we'll\nsend you a link to get back into your account."
         
         self.dataSource = self
+        self.isScrollEnabled = false
 
         // Create bar
         let bar = TMBar.ButtonBar()
@@ -31,8 +32,12 @@ class TabViewController: TabmanViewController {
         bar.layout.contentMode = .fit
         bar.indicator.weight = .light
         
+        
         bar.indicator.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 0.5)
         bar.layout.view.backgroundColor = UIColor.white //changes the background color of tabbar
+        
+        bar.scrollMode = .none
+        bar.indicator.overscrollBehavior = .none
         
         
         bar.buttons.customize {
