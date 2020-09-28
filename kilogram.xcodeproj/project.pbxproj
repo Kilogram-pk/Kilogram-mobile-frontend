@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1828B6DA251DD23300CAF395 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1828B6D9251DD23300CAF395 /* Billabong.ttf */; };
 		18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18668E4F252061DA002214FA /* ForgotPassword.storyboard */; };
-		18881D4B25207BB900449B6A /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18881D4A25207BB900449B6A /* ForgotPassViewController.swift */; };
 		18881D4D25209F9200449B6A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18881D4C25209F9200449B6A /* TabViewController.swift */; };
 		18A81E03251B79FC00EB5904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A81E02251B79FC00EB5904 /* AppDelegate.swift */; };
 		18A81E05251B79FC00EB5904 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A81E04251B79FC00EB5904 /* SceneDelegate.swift */; };
@@ -38,7 +37,6 @@
 		14A49C1B5A3DA4EA75571CD2 /* Pods-kilogramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kilogramTests.debug.xcconfig"; path = "Target Support Files/Pods-kilogramTests/Pods-kilogramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1828B6D9251DD23300CAF395 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
 		18668E4F252061DA002214FA /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
-		18881D4A25207BB900449B6A /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		18881D4C25209F9200449B6A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		18881D4E2520A05E00449B6A /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A81DFF251B79FC00EB5904 /* kilogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kilogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				18668E4F252061DA002214FA /* ForgotPassword.storyboard */,
-				18881D4A25207BB900449B6A /* ForgotPassViewController.swift */,
 			);
 			path = forgotPassword;
 			sourceTree = "<group>";
@@ -375,7 +372,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18881D4B25207BB900449B6A /* ForgotPassViewController.swift in Sources */,
 				18A81E07251B79FC00EB5904 /* ViewController.swift in Sources */,
 				18A81E03251B79FC00EB5904 /* AppDelegate.swift in Sources */,
 				18881D4D25209F9200449B6A /* TabViewController.swift in Sources */,

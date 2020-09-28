@@ -5,6 +5,7 @@ import Pageboy
 class TabViewController: TabmanViewController {
     @IBOutlet weak var tabView: UIView!
     
+    @IBOutlet weak var descriptionLabel: UILabel!
     lazy var viewControllers: [UIViewController] = {
         var viewControllers = [UIViewController]()
         for _ in 0 ..< 2 {
@@ -15,6 +16,9 @@ class TabViewController: TabmanViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        descriptionLabel.text = "Enter your username or email address and we'll\nsend you a link to get back into your account."
+        
         self.dataSource = self
 
         // Create bar
@@ -33,10 +37,12 @@ class TabViewController: TabmanViewController {
         
         bar.buttons.customize {
             (button) in
-            button.tintColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 0.5)
+            button.tintColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 0.3)
             button.selectedTintColor = UIColor.black
             button.backgroundColor = UIColor.white
+            button.font = UIFont.init(name: "HelveticaNeue", size: 14)!
         }
+        
 
         // Add to view
         addBar(bar, dataSource: self, at: .custom(view: tabView, layout: nil))
