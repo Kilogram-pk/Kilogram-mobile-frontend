@@ -165,18 +165,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndG-Im-JXG">
-                                <rect key="frame" x="147" y="421" width="120" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qA-HI-Jyd">
+                                <rect key="frame" x="20" y="393" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KUg-0c-6Ie"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need more help?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Von-Ye-qlG">
+                                <rect key="frame" x="157" y="461" width="100" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="yiw-5f-OYH"/>
+                                    <constraint firstAttribute="height" constant="16" id="yk7-oE-vOD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ndG-Im-JXG" firstAttribute="leading" secondItem="e79-2j-a2f" secondAttribute="leading" constant="147" id="Cjp-Uk-6cf"/>
-                            <constraint firstItem="e79-2j-a2f" firstAttribute="trailing" secondItem="ndG-Im-JXG" secondAttribute="trailing" constant="147" id="MMc-vX-U2b"/>
+                            <constraint firstItem="6qA-HI-Jyd" firstAttribute="leading" secondItem="e79-2j-a2f" secondAttribute="leading" constant="20" id="JBi-Tz-Avp"/>
+                            <constraint firstItem="Von-Ye-qlG" firstAttribute="top" secondItem="6qA-HI-Jyd" secondAttribute="bottom" constant="28" id="MHy-Bu-m3k"/>
+                            <constraint firstItem="6qA-HI-Jyd" firstAttribute="top" secondItem="2ED-dk-sRR" secondAttribute="bottom" constant="15" id="NQ6-KW-Ttc"/>
                             <constraint firstItem="2ED-dk-sRR" firstAttribute="top" secondItem="e79-2j-a2f" secondAttribute="top" constant="300" id="OUn-uw-LCs"/>
-                            <constraint firstItem="ndG-Im-JXG" firstAttribute="top" secondItem="2ED-dk-sRR" secondAttribute="bottom" constant="43" id="Ve8-Ie-T6t"/>
+                            <constraint firstItem="Von-Ye-qlG" firstAttribute="centerX" secondItem="nrm-Z8-Stt" secondAttribute="centerX" id="PtC-Gh-4nE"/>
                             <constraint firstItem="2ED-dk-sRR" firstAttribute="leading" secondItem="e79-2j-a2f" secondAttribute="leading" constant="20" id="YIp-Y5-EpB"/>
+                            <constraint firstItem="e79-2j-a2f" firstAttribute="trailing" secondItem="6qA-HI-Jyd" secondAttribute="trailing" constant="20" id="Zwf-u4-3aS"/>
                             <constraint firstItem="e79-2j-a2f" firstAttribute="trailing" secondItem="2ED-dk-sRR" secondAttribute="trailing" constant="20" id="oNU-i1-z4E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e79-2j-a2f"/>
@@ -184,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2V-rh-EfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1388" y="107"/>
+            <point key="canvasLocation" x="1386.9565217391305" y="106.47321428571428"/>
         </scene>
     </scenes>
 </document>
