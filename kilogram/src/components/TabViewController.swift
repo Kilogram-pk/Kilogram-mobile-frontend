@@ -6,6 +6,8 @@ class TabViewController: TabmanViewController {
     @IBOutlet weak var tabView: UIView!
     
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var backToLogin: UILabel!
+    
     lazy var viewControllers: [UIViewController] = {
         var viewControllers = [UIViewController]()
         for _ in 0 ..< 1 {
