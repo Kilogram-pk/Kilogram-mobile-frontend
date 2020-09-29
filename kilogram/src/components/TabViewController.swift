@@ -8,9 +8,12 @@ class TabViewController: TabmanViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     lazy var viewControllers: [UIViewController] = {
         var viewControllers = [UIViewController]()
-        for _ in 0 ..< 2 {
+        for _ in 0 ..< 1 {
             viewControllers.append(makeChildViewController())
         }
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        viewControllers.append(storyboard.instantiateViewController(withIdentifier: "phoneNumber") as! UIViewController)  
+
         return viewControllers
     }()
 
