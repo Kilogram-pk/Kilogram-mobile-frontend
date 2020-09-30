@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1828B6DA251DD23300CAF395 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1828B6D9251DD23300CAF395 /* Billabong.ttf */; };
+		1837167C2523A13700225032 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1837167B2523A13700225032 /* SignUp.storyboard */; };
+		18538CC62523A49A000DF175 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18538CC52523A49A000DF175 /* SignUpViewController.swift */; };
 		18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18668E4F252061DA002214FA /* ForgotPassword.storyboard */; };
 		18881D4D25209F9200449B6A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18881D4C25209F9200449B6A /* TabViewController.swift */; };
 		18A7F8922522FE550093BCF4 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F8912522FE550093BCF4 /* TextFieldController.swift */; };
@@ -38,6 +40,8 @@
 		05F62890C35B39298693A22D /* Pods-kilogram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kilogram.release.xcconfig"; path = "Target Support Files/Pods-kilogram/Pods-kilogram.release.xcconfig"; sourceTree = "<group>"; };
 		14A49C1B5A3DA4EA75571CD2 /* Pods-kilogramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kilogramTests.debug.xcconfig"; path = "Target Support Files/Pods-kilogramTests/Pods-kilogramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1828B6D9251DD23300CAF395 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
+		1837167B2523A13700225032 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		18538CC52523A49A000DF175 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		18668E4F252061DA002214FA /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		18881D4C25209F9200449B6A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		18881D4E2520A05E00449B6A /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +122,19 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		183716782523A0FE00225032 /* signUp */ = {
+			isa = PBXGroup;
+			children = (
+				1837167B2523A13700225032 /* SignUp.storyboard */,
+				18538CC52523A49A000DF175 /* SignUpViewController.swift */,
+			);
+			path = signUp;
+			sourceTree = "<group>";
+		};
 		18668E4D252061A3002214FA /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				183716782523A0FE00225032 /* signUp */,
 				18668E4E252061AE002214FA /* forgotPassword */,
 			);
 			path = screens;
@@ -294,6 +308,7 @@
 				18A81E2C251B824A00EB5904 /* .gitignore in Resources */,
 				18A81E0F251B79FD00EB5904 /* LaunchScreen.storyboard in Resources */,
 				18A81E0C251B79FD00EB5904 /* Assets.xcassets in Resources */,
+				1837167C2523A13700225032 /* SignUp.storyboard in Resources */,
 				1828B6DA251DD23300CAF395 /* Billabong.ttf in Resources */,
 				18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */,
 				18A81E0A251B79FC00EB5904 /* Main.storyboard in Resources */,
@@ -379,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A81E07251B79FC00EB5904 /* ViewController.swift in Sources */,
+				18538CC62523A49A000DF175 /* SignUpViewController.swift in Sources */,
 				18A7F89425232F930093BCF4 /* ButtonController.swift in Sources */,
 				18A7F8922522FE550093BCF4 /* TextFieldController.swift in Sources */,
 				18A81E03251B79FC00EB5904 /* AppDelegate.swift in Sources */,

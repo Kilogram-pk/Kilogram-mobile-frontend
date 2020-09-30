@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     var email: String = "";
     var password: String = "";
     
-    @IBOutlet weak var bottomText: UILabel!
     @IBOutlet weak var loginButton: UIButton!
-        
+    @IBOutlet weak var signUpButton: UIButton!
+    
     @IBAction func didFinishEditingEmail(_ sender: UITextField) {
         
         if(sender.text != nil) {
@@ -32,16 +32,19 @@ class ViewController: UIViewController {
     }
     
     func createBottomText() {
-        let attrs1 = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 12), NSAttributedString.Key.foregroundColor : UIColor(red: 10/255, green: 190/255, blue: 50/255, alpha: 0.5)]
+        let attrs1 = [ NSAttributedString.Key.foregroundColor : UIColor.black,
+                      NSAttributedString.Key.font: UIFont(name: "HelveticaNeue", size: 12.0)!]
 
-        let attrs2 = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 12), NSAttributedString.Key.foregroundColor : UIColor(rgb: 0x0366B)]
+        let attrs2 = [NSAttributedString.Key.foregroundColor : UIColor.lightGray,
+        NSAttributedString.Key.font: UIFont(name: "HelveticaNeue", size: 12.0)!]
 
-        let attributedString1 = NSMutableAttributedString(string:"Sign Up", attributes:attrs1)
+        let attributedString1 = NSMutableAttributedString(string:" Sign Up", attributes:attrs1)
 
         let attributedString2 = NSMutableAttributedString(string:"Don't have an account?", attributes:attrs2)
         attributedString2.append(attributedString1);
+        signUpButton.setAttributedTitle(attributedString2, for: .normal)
         
-        bottomText.attributedText = attributedString2
+//        bottomText.attributedText = attributedString2
     }
     
     override func viewDidLoad() {
