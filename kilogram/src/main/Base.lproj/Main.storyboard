@@ -94,7 +94,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="YXz-pq-8Fm" kind="presentation" modalPresentationStyle="fullScreen" id="BTI-kd-eNC"/>
+                                    <segue destination="YXz-pq-8Fm" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="BTI-kd-eNC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
-        <!--SignUp-->
+        <!--Home-->
         <scene sceneID="RLk-a5-RQC">
             <objects>
-                <viewControllerPlaceholder storyboardName="SignUp" id="YXz-pq-8Fm" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Home" id="YXz-pq-8Fm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GfS-Xb-4xB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="885" y="160"/>
