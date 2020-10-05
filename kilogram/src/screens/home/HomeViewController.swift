@@ -18,12 +18,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         for index in 0..<colors.count {
-            print("index", index)
             frame.origin.x = scrollView.frame.size.width * CGFloat(index)
             frame.size = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-            
-            
-            
             let subView = UIView(frame: frame)
             addChildVC(vcView: subView)
             subView.backgroundColor = colors[index]
@@ -46,4 +42,18 @@ class HomeViewController: UIViewController {
         testVC.didMove(toParent: self)
     }
     
+}
+
+extension HomeViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        if scrollView.contentOffset.y > lastOffset + scrollSnapHeight {
+//            scrollView.isScrollEnabled = false
+//        } else if scrollView.contentOffset.y < lastOffset - scrollSnapHeight {
+//            scrollView.isScrollEnabled = false
+//        }
+        
+    }
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+    }
 }
