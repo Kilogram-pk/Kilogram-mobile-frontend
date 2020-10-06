@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class ViewController: UIViewController {
 
@@ -49,6 +50,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let loginButton = FBLoginButton()
+        loginButton.center = view.center
+        view.addSubview(loginButton)
         createBottomText()
         loginButton.layer.cornerRadius = 5
 //        let screenSize: CGRect = UIScreen.main.bounds // get screen bounds
