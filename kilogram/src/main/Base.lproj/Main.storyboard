@@ -10,6 +10,12 @@
         <array key="Billabong.ttf">
             <string>Billabong</string>
         </array>
+        <array key="SanFranciscoText-Bold.otf">
+            <string>SanFranciscoText-Bold</string>
+        </array>
+        <array key="SanFranciscoText-Medium.otf">
+            <string>SanFranciscoText-Medium</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -52,7 +58,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number, username or email address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="arw-xN-EER" customClass="TextFieldController" customModule="kilogram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="110" width="374" height="34"/>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="didFinishEditingEmail:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="o4s-rl-LYV"/>
@@ -67,59 +73,61 @@
                                             <action selector="didFinishEditingPassword:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="X1p-An-AlL"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgotten password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rys-8H-wkj">
-                                        <rect key="frame" x="241.5" y="203" width="132.5" height="15.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
-                                        <color key="textColor" red="0.0" green="0.21176470589999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRU-5w-xYX">
-                                        <rect key="frame" x="0.0" y="335" width="374" height="1"/>
+                                    <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRU-5w-xYX">
+                                        <rect key="frame" x="0.0" y="324" width="374" height="1"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="mAm-Be-n6K"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmX-M1-xS4">
-                                        <rect key="frame" x="162" y="328.5" width="50" height="13.5"/>
+                                        <rect key="frame" x="162" y="316" width="50" height="17"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="VLb-Kj-R6a"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="14"/>
+                                        <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woz-i0-Gz5" customClass="ButtonController" customModule="kilogram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="238.5" width="374" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woz-i0-Gz5" customClass="ButtonController" customModule="kilogram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="246" width="374" height="40"/>
+                                        <color key="backgroundColor" red="0.50588235294117645" green="0.78823529411764703" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="2qc-Pr-iCy"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="17"/>
                                         <state key="normal" title="Log In">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQR-o1-NM6">
+                                        <rect key="frame" x="263" y="198" width="111" height="28"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="13"/>
+                                        <state key="normal" title="Forgot Password?">
+                                            <color key="titleColor" red="0.23529411764705882" green="0.60392156862745094" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="IQR-o1-NM6" firstAttribute="top" secondItem="YXi-zF-BLY" secondAttribute="bottom" constant="10" id="095-Me-wQ4"/>
                                     <constraint firstItem="nh8-gR-3Hk" firstAttribute="centerX" secondItem="xEr-Ok-AC6" secondAttribute="centerX" id="0Ti-b4-2H0"/>
                                     <constraint firstItem="uRU-5w-xYX" firstAttribute="leading" secondItem="xEr-Ok-AC6" secondAttribute="leading" id="0ae-G8-8W4"/>
                                     <constraint firstAttribute="trailing" secondItem="Woz-i0-Gz5" secondAttribute="trailing" id="1Cb-t0-fVY"/>
-                                    <constraint firstAttribute="trailing" secondItem="Rys-8H-wkj" secondAttribute="trailing" id="Exj-h9-XwR"/>
-                                    <constraint firstItem="Rys-8H-wkj" firstAttribute="top" secondItem="YXi-zF-BLY" secondAttribute="bottom" constant="15" id="ItT-gZ-vJ2"/>
                                     <constraint firstItem="nmX-M1-xS4" firstAttribute="centerY" secondItem="uRU-5w-xYX" secondAttribute="centerY" id="TNC-WL-6bb"/>
                                     <constraint firstItem="YXi-zF-BLY" firstAttribute="leading" secondItem="xEr-Ok-AC6" secondAttribute="leading" id="Wgd-Ri-e2S"/>
                                     <constraint firstAttribute="trailing" secondItem="YXi-zF-BLY" secondAttribute="trailing" id="XxD-6E-ghA"/>
                                     <constraint firstItem="Woz-i0-Gz5" firstAttribute="leading" secondItem="xEr-Ok-AC6" secondAttribute="leading" id="ezV-DN-qkx"/>
-                                    <constraint firstItem="nmX-M1-xS4" firstAttribute="top" secondItem="Woz-i0-Gz5" secondAttribute="bottom" constant="50" id="g1m-MT-VvQ"/>
+                                    <constraint firstItem="nmX-M1-xS4" firstAttribute="top" secondItem="Woz-i0-Gz5" secondAttribute="bottom" constant="30" id="g1m-MT-VvQ"/>
                                     <constraint firstItem="arw-xN-EER" firstAttribute="leading" secondItem="xEr-Ok-AC6" secondAttribute="leading" id="i6p-gL-38Q"/>
                                     <constraint firstItem="nh8-gR-3Hk" firstAttribute="top" secondItem="xEr-Ok-AC6" secondAttribute="topMargin" id="iG7-JI-5Uo"/>
                                     <constraint firstItem="nmX-M1-xS4" firstAttribute="centerX" secondItem="uRU-5w-xYX" secondAttribute="centerX" id="jrU-yw-01v"/>
+                                    <constraint firstItem="Woz-i0-Gz5" firstAttribute="top" secondItem="IQR-o1-NM6" secondAttribute="bottom" constant="20" id="nD9-g7-WCI"/>
                                     <constraint firstAttribute="trailing" secondItem="uRU-5w-xYX" secondAttribute="trailing" id="qoh-sr-RFC"/>
                                     <constraint firstItem="YXi-zF-BLY" firstAttribute="top" secondItem="arw-xN-EER" secondAttribute="bottom" constant="10" id="tmL-lL-2FH"/>
                                     <constraint firstItem="arw-xN-EER" firstAttribute="top" secondItem="nh8-gR-3Hk" secondAttribute="bottom" constant="30" id="vNZ-8c-7Cw"/>
+                                    <constraint firstAttribute="trailing" secondItem="IQR-o1-NM6" secondAttribute="trailing" id="vk6-MK-LvA"/>
                                     <constraint firstAttribute="trailing" secondItem="arw-xN-EER" secondAttribute="trailing" id="wmO-1T-uzR"/>
-                                    <constraint firstItem="Woz-i0-Gz5" firstAttribute="top" secondItem="Rys-8H-wkj" secondAttribute="bottom" constant="20" id="xtd-xP-fGI"/>
                                 </constraints>
                             </view>
                         </subviews>

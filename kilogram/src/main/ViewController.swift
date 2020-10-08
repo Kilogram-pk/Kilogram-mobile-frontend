@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         fbLogin.center = CGPoint(x: UIScreen.main.bounds.width / 2 , y: UIScreen.main.bounds.height / 1.6)
         fbLogin.permissions = ["public_profile", "email"]
         fbLogin.delegate = self
-        view.addSubview(fbLogin)
+//        view.addSubview(fbLogin)
         createBottomText()
 //        loginButton.layer.cornerRadius = 5
         

@@ -37,10 +37,10 @@ class TextFieldController: UITextField {
         self.backgroundColor = UIColor(red: 250, green: 250, blue: 250)
         self.textColor = UIColor(red: 38, green: 38, blue: 38)
         self.font = UIFont(name: "HelveticaNeue", size: 15.0)
-        self.minimumFontSize = 22
+        self.minimumFontSize = 20
         self.attributedPlaceholder = NSAttributedString(string: self.placeholder!,
         attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 156, green: 156, blue: 156),
-                     NSAttributedString.Key.font: UIFont(name: "HelveticaNeue", size: 15.0)
+                     NSAttributedString.Key.font: UIFont(name: "SanFranciscoText-Medium", size: 15.0)
         
         ])
 
