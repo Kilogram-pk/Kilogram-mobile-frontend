@@ -50,39 +50,39 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        https://stackoverflow.com/questions/17572304/get-position-of-uiview-in-respect-to-its-superviews-superview/17572473
         let fbLogin = FBLoginButton()
         fbLogin.center = CGPoint(x: UIScreen.main.bounds.width / 2 , y: UIScreen.main.bounds.height / 1.6)
         fbLogin.permissions = ["public_profile", "email"]
         fbLogin.delegate = self
         view.addSubview(fbLogin)
         createBottomText()
-        loginButton.layer.cornerRadius = 5
+//        loginButton.layer.cornerRadius = 5
         
         if let token = AccessToken.current, !token.isExpired {
             print("User already logged in ", AccessToken.current!)
             let request = GraphRequest(graphPath: "me", parameters: ["fields": "id, email, first_name, last_name"], tokenString: AccessToken.current?.tokenString, version: Settings.defaultGraphAPIVersion, httpMethod: HTTPMethod.get)
-                   request.start { (connection, result, error) in
-                       if let err = error {
-                           print("Facebook graph request error: \(err)")
-                       } else {
-                           print("Facebook graph request successful!")
-
-                           guard let json = result as? NSDictionary else { return }
-                           if let email = json["email"] as? String {
-                               print("\(email)")
-                           }
-                           if let firstName = json["first_name"] as? String {
-                               print("\(firstName)")
-                           }
-                           if let lastName = json["last_name"] as? String {
-                               print("\(lastName)")
-                           }
-                           if let id = json["id"] as? String {
-                               print("\(id)")
-                           }
-                       }
-                   }
+            request.start { (connection, result, error) in
+                if let err = error {
+                    print("Facebook graph request error: \(err)")
+                } else {
+                    print("Facebook graph request successful!")
+                    
+                    guard let json = result as? NSDictionary else { return }
+                    if let email = json["email"] as? String {
+                        print("\(email)")
+                    }
+                    if let firstName = json["first_name"] as? String {
+                        print("\(firstName)")
+                    }
+                    if let lastName = json["last_name"] as? String {
+                        print("\(lastName)")
+                    }
+                    if let id = json["id"] as? String {
+                        print("\(id)")
+                    }
+                }
+            }
         }
     }
     
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
         if email.count > 0 && password.count > 0 {
             loginButton.backgroundColor = UIColor.black
         } else {
-            loginButton.backgroundColor = UIColor(rgb: 0x000000)
+//            loginButton.backgroundColor = UIColor(rgb: 0x000000)
         }
     }
     
