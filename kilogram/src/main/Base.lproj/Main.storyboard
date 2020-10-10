@@ -74,14 +74,14 @@
                                         </connections>
                                     </textField>
                                     <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRU-5w-xYX">
-                                        <rect key="frame" x="0.0" y="324" width="374" height="1"/>
+                                        <rect key="frame" x="0.0" y="329" width="374" height="1"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="mAm-Be-n6K"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmX-M1-xS4">
-                                        <rect key="frame" x="162" y="316" width="50" height="17"/>
+                                        <rect key="frame" x="162" y="321" width="50" height="17"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="VLb-Kj-R6a"/>
@@ -91,10 +91,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woz-i0-Gz5" customClass="ButtonController" customModule="kilogram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="246" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="246" width="374" height="45"/>
                                         <color key="backgroundColor" red="0.50588235294117645" green="0.78823529411764703" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="2qc-Pr-iCy"/>
+                                            <constraint firstAttribute="height" constant="45" id="2qc-Pr-iCy"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="17"/>
                                         <state key="normal" title="Log In">
@@ -107,13 +107,46 @@
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" red="0.23529411764705882" green="0.60392156862745094" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="5bw-RR-Qqk" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="kLW-pT-azv"/>
+                                        </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ya1-D7-G2m">
+                                        <rect key="frame" x="0.0" y="368" width="374" height="16"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_login" translatesAutoresizingMaskIntoConstraints="NO" id="cZi-cz-xDv">
+                                                <rect key="frame" x="72.5" y="-7" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="d1q-On-hEJ"/>
+                                                    <constraint firstAttribute="width" constant="30" id="t5R-zI-kSi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Log in with Facebook" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ2-jH-jat">
+                                                <rect key="frame" x="102.5" y="-2" width="169" height="20.5"/>
+                                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="17"/>
+                                                <color key="textColor" red="0.01176470588" green="0.56862745100000001" blue="0.98039215690000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstItem="cZi-cz-xDv" firstAttribute="centerY" secondItem="Ya1-D7-G2m" secondAttribute="centerY" id="Imb-5w-b41"/>
+                                            <constraint firstItem="EQ2-jH-jat" firstAttribute="centerX" secondItem="Ya1-D7-G2m" secondAttribute="centerX" id="Jka-3w-OZB"/>
+                                            <constraint firstAttribute="height" constant="16" id="LQN-4Q-wNs"/>
+                                            <constraint firstItem="EQ2-jH-jat" firstAttribute="leading" secondItem="cZi-cz-xDv" secondAttribute="trailing" id="Tke-iM-nbD"/>
+                                            <constraint firstItem="EQ2-jH-jat" firstAttribute="centerX" secondItem="Ya1-D7-G2m" secondAttribute="centerX" id="ina-RI-wdi"/>
+                                            <constraint firstItem="EQ2-jH-jat" firstAttribute="centerY" secondItem="Ya1-D7-G2m" secondAttribute="centerY" id="u6L-FS-evU"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="IQR-o1-NM6" firstAttribute="top" secondItem="YXi-zF-BLY" secondAttribute="bottom" constant="10" id="095-Me-wQ4"/>
                                     <constraint firstItem="nh8-gR-3Hk" firstAttribute="centerX" secondItem="xEr-Ok-AC6" secondAttribute="centerX" id="0Ti-b4-2H0"/>
                                     <constraint firstItem="uRU-5w-xYX" firstAttribute="leading" secondItem="xEr-Ok-AC6" secondAttribute="leading" id="0ae-G8-8W4"/>
                                     <constraint firstAttribute="trailing" secondItem="Woz-i0-Gz5" secondAttribute="trailing" id="1Cb-t0-fVY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ya1-D7-G2m" secondAttribute="trailing" id="Bey-pT-8Fi"/>
+                                    <constraint firstItem="Ya1-D7-G2m" firstAttribute="top" secondItem="nmX-M1-xS4" secondAttribute="bottom" constant="30" id="JrQ-Bc-Plo"/>
                                     <constraint firstItem="nmX-M1-xS4" firstAttribute="centerY" secondItem="uRU-5w-xYX" secondAttribute="centerY" id="TNC-WL-6bb"/>
                                     <constraint firstItem="YXi-zF-BLY" firstAttribute="leading" secondItem="xEr-Ok-AC6" secondAttribute="leading" id="Wgd-Ri-e2S"/>
                                     <constraint firstAttribute="trailing" secondItem="YXi-zF-BLY" secondAttribute="trailing" id="XxD-6E-ghA"/>
@@ -128,6 +161,7 @@
                                     <constraint firstItem="arw-xN-EER" firstAttribute="top" secondItem="nh8-gR-3Hk" secondAttribute="bottom" constant="30" id="vNZ-8c-7Cw"/>
                                     <constraint firstAttribute="trailing" secondItem="IQR-o1-NM6" secondAttribute="trailing" id="vk6-MK-LvA"/>
                                     <constraint firstAttribute="trailing" secondItem="arw-xN-EER" secondAttribute="trailing" id="wmO-1T-uzR"/>
+                                    <constraint firstItem="Ya1-D7-G2m" firstAttribute="leading" secondItem="xEr-Ok-AC6" secondAttribute="leading" id="xeV-h6-bcc"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -148,6 +182,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="fbLoginLabel" destination="EQ2-jH-jat" id="BtZ-Er-gKU"/>
                         <outlet property="signUpButton" destination="eH5-aT-qMQ" id="A9c-TD-Hfy"/>
                     </connections>
                 </viewController>
@@ -371,4 +406,7 @@
             <point key="canvasLocation" x="2294.202898550725" y="842.41071428571422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebook_login" width="225" height="225"/>
+    </resources>
 </document>

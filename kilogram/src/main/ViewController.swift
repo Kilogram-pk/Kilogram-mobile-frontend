@@ -11,6 +11,7 @@ import FBSDKLoginKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var fbLoginLabel: UILabel!
     var email: String = "";
     var password: String = "";
     
@@ -47,6 +48,7 @@ class ViewController: UIViewController {
         
         //        bottomText.attributedText = attributedString2
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
