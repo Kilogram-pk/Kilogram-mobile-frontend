@@ -31,11 +31,13 @@ class TabViewController: TabmanViewController {
         let bar = TMBar.ButtonBar()
         
         bar.backgroundColor = .clear
-        bar.layout.transitionStyle = .snap // Customize
+        bar.layout.transitionStyle = .none // Customize
         tabView.tintColor = UIColor.red;
         
         bar.layout.contentMode = .fit
-        bar.indicator.weight = .light
+        bar.indicator.weight = .custom(value: 2.0)
+        bar.indicator.transitionStyle = .none
+        bar.indicator.overscrollBehavior = .none
         
         
         bar.indicator.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 0.5)

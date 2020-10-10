@@ -20,6 +20,7 @@ class ButtonController: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.layer.cornerRadius = 5
+        self.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 45)
     }
     
 }
