@@ -35,7 +35,7 @@ class TabViewController: TabmanViewController {
         tabView.tintColor = UIColor.red;
         
         bar.layout.contentMode = .fit
-        bar.indicator.weight = .custom(value: 2.0)
+        bar.indicator.weight = .custom(value: 1.0)
         bar.indicator.transitionStyle = .none
         bar.indicator.overscrollBehavior = .none
         
@@ -52,7 +52,7 @@ class TabViewController: TabmanViewController {
             button.tintColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 0.3)
             button.selectedTintColor = UIColor.black
             button.backgroundColor = UIColor.white
-            button.font = UIFont.init(name: "HelveticaNeue", size: 14)!
+            button.font = UIFont.init(name: "SanFranciscoText-Medium", size: 19)!
         }
         
 
