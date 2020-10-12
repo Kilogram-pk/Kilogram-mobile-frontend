@@ -9,6 +9,7 @@ pod 'XLPagerTabStrip', '~> 9.0'
 pod 'SnapKit', '~> 5.0.0'
 pod 'SwipeViewController'
 pod 'Tabman', '~> 2.9'
+pod "FlagPhoneNumber"
 
   # Pods for kilogram
   target 'kilogramTests' do

@@ -20,6 +20,7 @@ class ForgotPassEmail: UIViewController {
         container.frame = CGRect(x: 0, y: 350, width: UIScreen.main.bounds.width - 40, height: 300)
         texFieldContainer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 40 , height: 45)
         buttonContainer.frame = CGRect(x: 0, y: 65, width: UIScreen.main.bounds.width - 40, height: 45)
+        labelContainer.frame = CGRect(x: 0, y: 115, width: 100, height: 45)
         texFieldContainer.center.x = self.view.center.x
         buttonContainer.center.x = self.view.center.x
         labelContainer.center.x = self.view.center.x

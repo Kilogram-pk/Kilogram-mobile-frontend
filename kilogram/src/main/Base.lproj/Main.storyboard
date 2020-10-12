@@ -258,58 +258,49 @@
             </objects>
             <point key="canvasLocation" x="1386.9565217391305" y="106.47321428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Forgot Pass Phone-->
         <scene sceneID="S1H-4e-2cF">
             <objects>
-                <viewController storyboardIdentifier="phoneNumber" id="QJ6-6O-e6Z" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="phoneNumber" id="QJ6-6O-e6Z" customClass="ForgotPassPhone" customModule="kilogram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGa-um-bia">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HJX-Zc-Ue4" customClass="TextFieldController" customModule="kilogram" customModuleProvider="target">
-                                <rect key="frame" x="20" y="354" width="374" height="34"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="tel"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgd-80-git" customClass="ButtonController" customModule="kilogram" customModuleProvider="target">
-                                <rect key="frame" x="20" y="403" width="374" height="40"/>
-                                <color key="backgroundColor" red="0.50588235294117645" green="0.78823529411764703" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Vht-M2-lCS"/>
-                                    <constraint firstAttribute="height" constant="40" id="uBD-70-9m7"/>
-                                </constraints>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need more help?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkg-p0-La1">
-                                <rect key="frame" x="157" y="471" width="100" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="0gt-ue-Y7P"/>
-                                    <constraint firstAttribute="width" constant="100" id="vIz-cy-pVs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SzO-v9-16W">
+                                <rect key="frame" x="20" y="44" width="374" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgd-80-git" customClass="ButtonController" customModule="kilogram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71" width="374" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.50588235294117645" green="0.78823529411764703" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Need more help?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkg-p0-La1">
+                                        <rect key="frame" x="137" y="129" width="100" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="HJX-Zc-Ue4" firstAttribute="leading" secondItem="bUS-RO-20h" secondAttribute="leading" constant="20" id="Dud-ES-qXW"/>
-                            <constraint firstItem="bUS-RO-20h" firstAttribute="trailing" secondItem="mgd-80-git" secondAttribute="trailing" constant="20" id="Kef-q8-RUZ"/>
-                            <constraint firstItem="mgd-80-git" firstAttribute="top" secondItem="HJX-Zc-Ue4" secondAttribute="bottom" constant="15" id="Kqd-IE-25Q"/>
-                            <constraint firstItem="mgd-80-git" firstAttribute="leading" secondItem="bUS-RO-20h" secondAttribute="leading" constant="20" id="Mat-pr-sHS"/>
-                            <constraint firstItem="bUS-RO-20h" firstAttribute="trailing" secondItem="HJX-Zc-Ue4" secondAttribute="trailing" constant="20" id="hvj-eT-1R4"/>
-                            <constraint firstItem="HJX-Zc-Ue4" firstAttribute="top" secondItem="bUS-RO-20h" secondAttribute="top" constant="310" id="jDN-8e-1oZ"/>
-                            <constraint firstItem="wkg-p0-La1" firstAttribute="top" secondItem="mgd-80-git" secondAttribute="bottom" constant="28" id="jvx-c0-RMp"/>
-                            <constraint firstItem="wkg-p0-La1" firstAttribute="centerX" secondItem="SGa-um-bia" secondAttribute="centerX" id="nAR-8A-uaQ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bUS-RO-20h"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonContainer" destination="mgd-80-git" id="Xgx-CE-Gig"/>
+                        <outlet property="container" destination="SzO-v9-16W" id="zwl-x7-aRm"/>
+                        <outlet property="lableContainer" destination="wkg-p0-La1" id="uBN-dF-kgp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XL3-nZ-Gul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2284" y="107"/>
+            <point key="canvasLocation" x="2282.608695652174" y="106.47321428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FkJ-lY-juV">
