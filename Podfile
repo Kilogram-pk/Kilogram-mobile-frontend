@@ -10,6 +10,7 @@ pod 'SnapKit', '~> 5.0.0'
 pod 'SwipeViewController'
 pod 'Tabman', '~> 2.9'
 pod "FlagPhoneNumber"
+pod 'Alamofire', '~> 5.2'
 
   # Pods for kilogram
   target 'kilogramTests' do

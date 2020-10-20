@@ -33,7 +33,6 @@ class ForgotPassPhone: UIViewController {
         phoneNumberTextField.layer.borderColor = CGColor(srgbRed: CGFloat(212.0/255.0), green: CGFloat(212.0/255.0), blue: CGFloat(212.0/255.0), alpha: CGFloat(1.0))
         phoneNumberTextField.flagButton.backgroundColor = UIColor(red: CGFloat(250.0/255.0), green: CGFloat(250.0/255.0), blue: CGFloat(250.0/255.0), alpha: CGFloat(1.0))
         phoneNumberTextField.flagButton.tintColor = UIColor(red: CGFloat(250.0/255.0), green: CGFloat(250.0/255.0), blue: CGFloat(250.0/255.0), alpha: CGFloat(1.0))
-        phoneNumberTextField.flagButton.
         self.view.addSubview(phoneNumberTextField)
     }
 

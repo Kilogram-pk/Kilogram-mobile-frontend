@@ -16,6 +16,9 @@
 		18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18668E4F252061DA002214FA /* ForgotPassword.storyboard */; };
 		188625BD253438D4008735D6 /* ForgotPassEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188625BC253438D4008735D6 /* ForgotPassEmail.swift */; };
 		18881D4D25209F9200449B6A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18881D4C25209F9200449B6A /* TabViewController.swift */; };
+		189760672536D5FA00F1A592 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189760662536D5FA00F1A592 /* SignUp.swift */; };
+		189760692536D98D00F1A592 /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189760682536D98D00F1A592 /* SignUpEmailViewController.swift */; };
+		1897606C253730BA00F1A592 /* SwiftyRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 1897606B253730BA00F1A592 /* SwiftyRequest */; };
 		18A7F8922522FE550093BCF4 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F8912522FE550093BCF4 /* TextFieldController.swift */; };
 		18A7F89425232F930093BCF4 /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F89325232F930093BCF4 /* ButtonController.swift */; };
 		18A81E03251B79FC00EB5904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A81E02251B79FC00EB5904 /* AppDelegate.swift */; };
@@ -57,6 +60,8 @@
 		188625BC253438D4008735D6 /* ForgotPassEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassEmail.swift; sourceTree = "<group>"; };
 		18881D4C25209F9200449B6A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		18881D4E2520A05E00449B6A /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		189760662536D5FA00F1A592 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		189760682536D98D00F1A592 /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewController.swift; sourceTree = "<group>"; };
 		18A7F8912522FE550093BCF4 /* TextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldController.swift; sourceTree = "<group>"; };
 		18A7F89325232F930093BCF4 /* ButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
 		18A81DFF251B79FC00EB5904 /* kilogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kilogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1897606C253730BA00F1A592 /* SwiftyRequest in Frameworks */,
 				54E82F350749D0C84BF0772B /* Pods_kilogram.framework in Frameworks */,
 				181B53A3252C674D009B4FF8 /* FacebookCore in Frameworks */,
 				181B53A5252C674D009B4FF8 /* FacebookLogin in Frameworks */,
@@ -151,6 +157,8 @@
 			children = (
 				1837167B2523A13700225032 /* SignUp.storyboard */,
 				18538CC52523A49A000DF175 /* SignUpViewController.swift */,
+				189760662536D5FA00F1A592 /* SignUp.swift */,
+				189760682536D98D00F1A592 /* SignUpEmailViewController.swift */,
 			);
 			path = signUp;
 			sourceTree = "<group>";
@@ -278,6 +286,7 @@
 			packageProductDependencies = (
 				181B53A2252C674D009B4FF8 /* FacebookCore */,
 				181B53A4252C674D009B4FF8 /* FacebookLogin */,
+				1897606B253730BA00F1A592 /* SwiftyRequest */,
 			);
 			productName = kilogram;
 			productReference = 18A81DFF251B79FC00EB5904 /* kilogram.app */;
@@ -332,6 +341,7 @@
 			mainGroup = 18A81DF6251B79FC00EB5904;
 			packageReferences = (
 				181B53A1252C674D009B4FF8 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				1897606A253730BA00F1A592 /* XCRemoteSwiftPackageReference "SwiftyRequest" */,
 			);
 			productRefGroup = 18A81E00251B79FC00EB5904 /* Products */;
 			projectDirPath = "";
@@ -444,6 +454,8 @@
 				18A81E07251B79FC00EB5904 /* ViewController.swift in Sources */,
 				18538CC62523A49A000DF175 /* SignUpViewController.swift in Sources */,
 				18A7F89425232F930093BCF4 /* ButtonController.swift in Sources */,
+				189760692536D98D00F1A592 /* SignUpEmailViewController.swift in Sources */,
+				189760672536D5FA00F1A592 /* SignUp.swift in Sources */,
 				188625BD253438D4008735D6 /* ForgotPassEmail.swift in Sources */,
 				18CDF783252A377800080B17 /* HomeViewController.swift in Sources */,
 				18A7F8922522FE550093BCF4 /* TextFieldController.swift in Sources */,
@@ -727,6 +739,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		1897606A253730BA00F1A592 /* XCRemoteSwiftPackageReference "SwiftyRequest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IBM-Swift/SwiftyRequest.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -739,6 +759,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 181B53A1252C674D009B4FF8 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
+		};
+		1897606B253730BA00F1A592 /* SwiftyRequest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1897606A253730BA00F1A592 /* XCRemoteSwiftPackageReference "SwiftyRequest" */;
+			productName = SwiftyRequest;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

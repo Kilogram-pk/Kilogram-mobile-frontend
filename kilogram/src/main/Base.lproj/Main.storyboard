@@ -302,27 +302,27 @@
             </objects>
             <point key="canvasLocation" x="2282.608695652174" y="106.47321428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up-->
         <scene sceneID="FkJ-lY-juV">
             <objects>
-                <viewController storyboardIdentifier="signUpPhone" id="iT2-As-bzk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUpPhone" id="iT2-As-bzk" customClass="SignUp" customModule="kilogram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVN-Ao-A3h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TCQ-UU-N0V" customClass="TextFieldController" customModule="kilogram" customModuleProvider="target">
                                 <rect key="frame" x="20" y="179" width="374" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="Fcd-dW-jmh"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="emailInput:" destination="0Yv-sj-Vgv" eventType="editingDidEnd" id="OIk-md-AhU"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LO-3k-xSG" customClass="ButtonController" customModule="kilogram" customModuleProvider="target">
-                                <rect key="frame" x="20" y="233" width="374" height="40"/>
+                                <rect key="frame" x="20" y="233" width="374" height="45"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="38v-pg-60W"/>
+                                    <constraint firstAttribute="height" constant="45" id="38v-pg-60W"/>
                                 </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -340,36 +340,44 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gtj-Mo-cDS"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="AVN-Ao-A3h" id="FuD-3l-9A6"/>
+                        <outlet property="textField" destination="TCQ-UU-N0V" id="rXG-9v-0hc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYK-gi-OAB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0Yv-sj-Vgv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1386.9565217391305" y="845.75892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Email View Controller-->
         <scene sceneID="ROy-ed-Lxc">
             <objects>
-                <viewController storyboardIdentifier="signUpEmail" id="Gq7-Bj-N7x" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUpEmail" id="Gq7-Bj-N7x" customClass="SignUpEmailViewController" customModule="kilogram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yiv-R2-9ZF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LgN-gi-1v2">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LgN-gi-1v2" customClass="TextFieldController" customModule="kilogram" customModuleProvider="target">
                                 <rect key="frame" x="20" y="179" width="374" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="Sfv-Pf-7aC"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="emailField:" destination="Gq7-Bj-N7x" eventType="editingChanged" id="38g-qP-6zn"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlo-TR-ZRO" customClass="ButtonController" customModule="kilogram" customModuleProvider="target">
-                                <rect key="frame" x="20" y="233" width="374" height="40"/>
+                                <rect key="frame" x="20" y="233" width="374" height="45"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="uFR-ry-XNw"/>
+                                    <constraint firstAttribute="height" constant="45" id="uFR-ry-XNw"/>
                                 </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextBtn:" destination="Gq7-Bj-N7x" eventType="touchDown" id="Bdc-Aw-7vK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
