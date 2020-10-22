@@ -12,6 +12,7 @@
 		181B53A5252C674D009B4FF8 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 181B53A4252C674D009B4FF8 /* FacebookLogin */; };
 		1825C4032534860C0070AD83 /* ForgotPassPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C4022534860C0070AD83 /* ForgotPassPhone.swift */; };
 		1828B6DA251DD23300CAF395 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1828B6D9251DD23300CAF395 /* Billabong.ttf */; };
+		182A1D53254160DF0092C3DD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A1D52254160DF0092C3DD /* File.swift */; };
 		1837167C2523A13700225032 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1837167B2523A13700225032 /* SignUp.storyboard */; };
 		18538CC62523A49A000DF175 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18538CC52523A49A000DF175 /* SignUpViewController.swift */; };
 		18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18668E4F252061DA002214FA /* ForgotPassword.storyboard */; };
@@ -56,6 +57,7 @@
 		1816367C25404B0C00A1F394 /* SanFranciscoText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Light.otf"; sourceTree = "<group>"; };
 		1825C4022534860C0070AD83 /* ForgotPassPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassPhone.swift; sourceTree = "<group>"; };
 		1828B6D9251DD23300CAF395 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
+		182A1D52254160DF0092C3DD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		1837167B2523A13700225032 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		18538CC52523A49A000DF175 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		18668E4F252061DA002214FA /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		1828B6D5251DD14D00CAF395 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				182A1D51254160CA0092C3DD /* utils */,
 				18668E4D252061A3002214FA /* screens */,
 				186D7631251E0E9800E0764C /* components */,
 				1828B6D7251DD21400CAF395 /* assets */,
@@ -153,6 +156,14 @@
 				1828B6D9251DD23300CAF395 /* Billabong.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		182A1D51254160CA0092C3DD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				182A1D52254160DF0092C3DD /* File.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		183716782523A0FE00225032 /* signUp */ = {
@@ -465,6 +476,7 @@
 				18A7F8922522FE550093BCF4 /* TextFieldController.swift in Sources */,
 				18A81E03251B79FC00EB5904 /* AppDelegate.swift in Sources */,
 				18881D4D25209F9200449B6A /* TabViewController.swift in Sources */,
+				182A1D53254160DF0092C3DD /* File.swift in Sources */,
 				1825C4032534860C0070AD83 /* ForgotPassPhone.swift in Sources */,
 				18A81E05251B79FC00EB5904 /* SceneDelegate.swift in Sources */,
 			);

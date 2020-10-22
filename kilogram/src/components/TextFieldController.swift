@@ -42,7 +42,7 @@ class TextFieldController: UITextField {
                      NSAttributedString.Key.font: UIFont(name: "SanFranciscoText-Medium", size: 15.0)
         
         ])
-
+        self.layer.cornerRadius = 5
     }
     
 }
