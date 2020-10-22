@@ -16,6 +16,9 @@
         <array key="SanFranciscoText-Medium.otf">
             <string>SanFranciscoText-Medium</string>
         </array>
+        <array key="SanFransico.otf">
+            <string>SFUIText-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -313,40 +316,59 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TCQ-UU-N0V" customClass="TextFieldController" customModule="kilogram" customModuleProvider="target">
                                 <rect key="frame" x="20" y="179" width="374" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="tel"/>
                                 <connections>
-                                    <action selector="emailInput:" destination="0Yv-sj-Vgv" eventType="editingDidEnd" id="OIk-md-AhU"/>
+                                    <action selector="onPhoneChanged:" destination="iT2-As-bzk" eventType="editingChanged" id="MA2-qL-zFZ"/>
                                 </connections>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkb-I3-gOg">
+                                <rect key="frame" x="20" y="220.5" width="374" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Syq-bM-be8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LO-3k-xSG" customClass="ButtonController" customModule="kilogram" customModuleProvider="target">
-                                <rect key="frame" x="20" y="233" width="374" height="45"/>
+                                <rect key="frame" x="20" y="245" width="374" height="45"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="38v-pg-60W"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="ka7-ew-NHJ"/>
                                 </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onButtonPress:" destination="iT2-As-bzk" eventType="touchUpInside" id="pEp-Kj-MCD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Gtj-Mo-cDS" firstAttribute="trailing" secondItem="bkb-I3-gOg" secondAttribute="trailing" constant="20" id="6Xo-K0-ccl"/>
+                            <constraint firstItem="bkb-I3-gOg" firstAttribute="leading" secondItem="Gtj-Mo-cDS" secondAttribute="leading" constant="20" id="Bud-Om-XMq"/>
                             <constraint firstItem="2LO-3k-xSG" firstAttribute="leading" secondItem="Gtj-Mo-cDS" secondAttribute="leading" constant="20" id="CXa-fC-Xg6"/>
                             <constraint firstItem="Gtj-Mo-cDS" firstAttribute="trailing" secondItem="2LO-3k-xSG" secondAttribute="trailing" constant="20" id="Gwf-d9-pZz"/>
-                            <constraint firstItem="2LO-3k-xSG" firstAttribute="top" secondItem="TCQ-UU-N0V" secondAttribute="bottom" constant="20" id="JXe-fv-H7P"/>
+                            <constraint firstItem="2LO-3k-xSG" firstAttribute="top" secondItem="bkb-I3-gOg" secondAttribute="bottom" constant="7.5" id="HQJ-vg-cid"/>
+                            <constraint firstItem="bkb-I3-gOg" firstAttribute="top" secondItem="TCQ-UU-N0V" secondAttribute="bottom" constant="7.5" id="JvG-vL-L9y"/>
                             <constraint firstItem="TCQ-UU-N0V" firstAttribute="top" secondItem="Gtj-Mo-cDS" secondAttribute="top" constant="135" id="RwT-QF-luS"/>
                             <constraint firstItem="Gtj-Mo-cDS" firstAttribute="trailing" secondItem="TCQ-UU-N0V" secondAttribute="trailing" constant="20" id="VRj-he-T7O"/>
                             <constraint firstItem="TCQ-UU-N0V" firstAttribute="leading" secondItem="Gtj-Mo-cDS" secondAttribute="leading" constant="20" id="fGD-8g-qKk"/>
+                            <constraint firstItem="2LO-3k-xSG" firstAttribute="leading" secondItem="Gtj-Mo-cDS" secondAttribute="leading" constant="20" id="t4z-ug-ThM"/>
+                            <constraint firstItem="Gtj-Mo-cDS" firstAttribute="trailing" secondItem="2LO-3k-xSG" secondAttribute="trailing" constant="20" id="wJb-Gu-g7A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gtj-Mo-cDS"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="AVN-Ao-A3h" id="FuD-3l-9A6"/>
-                        <outlet property="textField" destination="TCQ-UU-N0V" id="rXG-9v-0hc"/>
+                        <outlet property="buttonTopConstant" destination="HQJ-vg-cid" id="7qP-HZ-mkH"/>
+                        <outlet property="errorLabel" destination="bkb-I3-gOg" id="e0F-pf-Lah"/>
+                        <outlet property="validationHeight" destination="Syq-bM-be8" id="j1W-78-kh4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYK-gi-OAB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="0Yv-sj-Vgv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1386.9565217391305" y="845.75892857142856"/>
         </scene>

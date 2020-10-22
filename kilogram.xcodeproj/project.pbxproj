@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1816367D25404B0C00A1F394 /* SanFranciscoText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1816367C25404B0C00A1F394 /* SanFranciscoText-Light.otf */; };
 		181B53A3252C674D009B4FF8 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 181B53A2252C674D009B4FF8 /* FacebookCore */; };
 		181B53A5252C674D009B4FF8 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 181B53A4252C674D009B4FF8 /* FacebookLogin */; };
 		1825C4032534860C0070AD83 /* ForgotPassPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825C4022534860C0070AD83 /* ForgotPassPhone.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		05F62890C35B39298693A22D /* Pods-kilogram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kilogram.release.xcconfig"; path = "Target Support Files/Pods-kilogram/Pods-kilogram.release.xcconfig"; sourceTree = "<group>"; };
 		14A49C1B5A3DA4EA75571CD2 /* Pods-kilogramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kilogramTests.debug.xcconfig"; path = "Target Support Files/Pods-kilogramTests/Pods-kilogramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1816367C25404B0C00A1F394 /* SanFranciscoText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Light.otf"; sourceTree = "<group>"; };
 		1825C4022534860C0070AD83 /* ForgotPassPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassPhone.swift; sourceTree = "<group>"; };
 		1828B6D9251DD23300CAF395 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
 		1837167B2523A13700225032 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		1828B6D8251DD21E00CAF395 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1816367C25404B0C00A1F394 /* SanFranciscoText-Light.otf */,
 				18D2F0A8252F86FB00A5D403 /* SanFranciscoText-Bold.otf */,
 				18D2F0A9252F86FB00A5D403 /* SanFranciscoText-Heavy.otf */,
 				18D2F0A7252F86FB00A5D403 /* SanFranciscoText-Medium.otf */,
@@ -368,6 +371,7 @@
 				18D2F0A6252F7FD900A5D403 /* SanFransico.otf in Resources */,
 				1828B6DA251DD23300CAF395 /* Billabong.ttf in Resources */,
 				18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */,
+				1816367D25404B0C00A1F394 /* SanFranciscoText-Light.otf in Resources */,
 				18A81E0A251B79FC00EB5904 /* Main.storyboard in Resources */,
 				18CDF7812529E22E00080B17 /* Home.storyboard in Resources */,
 			);
