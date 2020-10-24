@@ -10,8 +10,7 @@ pod 'SnapKit', '~> 5.0.0'
 pod 'SwipeViewController'
 pod 'Tabman', '~> 2.9'
 pod "FlagPhoneNumber"
-pod 'Alamofire', '~> 5.2'
-
+pod 'Networking', '~> 4'
   # Pods for kilogram
   target 'kilogramTests' do
     inherit! :search_paths

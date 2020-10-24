@@ -4,11 +4,10 @@
 //
 //  Created by Apple on 14/10/2020.
 //  Copyright © 2020 Apple. All rights reserved.
-//
+//https://hasnat.tk/api/auth/register
 
 import UIKit
-import Alamofire
-import SwiftyRequest
+import Networking
 
 class SignUpEmailViewController: UIViewController {
     
@@ -23,22 +22,34 @@ class SignUpEmailViewController: UIViewController {
     var _validation = validation()
     
     @IBAction func nextBtn(_ sender: Any) {
-        let parameters: [String: String] = [
-            "emaila": "hak@embrace-it.com"
-        ]
         
-        let request = RestRequest(method: .get, url: "http://myApiCall/hello")
         let isValid = _validation.isValidEmail(email)
         print("isInvalid", isValid)
         if(!isValid){
             displayError()
-            error = true
+        } else {
+            let networking = Networking(baseURL: "https://hasnat.tk/api")
+            networking.post("/auth/register", parameters: ["email" : email]) { result in
+               // Successfull post using `application/json` as `Content-Type`
+                switch result {
+                case .success(let response):
+                    print("success", response.data)
+                    let json = response.dictionaryBody
+                    print("json**", response.statusCode)
+                    let arrayBody = response.arrayBody
+                    print("headers***", arrayBody)
+                    
+                case .failure(let response):
+                    
+                    let errorCode: Int = response.error.code
+                    if (errorCode == 422) {
+                        self.displayError()
+                    }
+                }
+
+            }
+            print("going ahead")
         }
-//        let url = URL(string: "https://hasnat.tk/api/auth/register")!
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "POST"
-//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//        request.addValue("application/json", forHTTPHeaderField: "Accept")
      
     }
     
@@ -51,6 +62,7 @@ class SignUpEmailViewController: UIViewController {
     }
     
     func displayError() {
+        error = true
         errorLabel.text = "Please enter a valid email address"
         errorLabel.isHidden = false
         errorLabel.font = UIFont(name: errorLabel.font.fontName, size: 14)

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 class validation {
     func isValidEmail(_ email: String) -> Bool {
@@ -15,5 +15,10 @@ class validation {
 
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
+    }
+    
+    func displayError(textField: UITextField) -> Void {
+        textField.layer.borderWidth = 1;
+        textField.layer.borderColor = CGColor(srgbRed: 255/255, green: 0/255, blue: 0/255, alpha: 0.7)
     }
 }

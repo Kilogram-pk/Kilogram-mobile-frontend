@@ -1,8 +1,8 @@
 PODS:
-  - Alamofire (5.2.2)
   - FlagPhoneNumber (0.8.0):
     - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
   - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
+  - Networking (4.4.0)
   - Pageboy (3.6.1)
   - SnapKit (5.0.1)
   - SwipeViewController (2.0)
@@ -11,8 +11,8 @@ PODS:
   - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
   - FlagPhoneNumber
+  - Networking (~> 4)
   - SnapKit (~> 5.0.0)
   - SwipeViewController
   - Tabman (~> 2.9)
@@ -20,8 +20,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - FlagPhoneNumber
+    - Networking
     - Pageboy
     - SnapKit
     - SwipeViewController
@@ -29,14 +29,14 @@ SPEC REPOS:
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
-  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
+  Networking: cbef47ab030af248248c26a696adb88989b52ef1
   Pageboy: 29a2d474ad99404b4d77f325e0ab6d705930a4fb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwipeViewController: 87ac3b72473f2caee7b84a7761c9367501fd557a
   Tabman: 085d89c65be9e883629bdaf5b1453a6397e57846
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: bd4282054bd05d4cf2ad5da92648e933cd870c7c
+PODFILE CHECKSUM: f71e1528cf431adf1d16bf0d183d99d8775bd1e9
 
 COCOAPODS: 1.9.3

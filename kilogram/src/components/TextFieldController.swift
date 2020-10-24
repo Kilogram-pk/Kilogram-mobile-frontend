@@ -43,6 +43,7 @@ class TextFieldController: UITextField {
         
         ])
         self.layer.cornerRadius = 5
+        
     }
     
 }
