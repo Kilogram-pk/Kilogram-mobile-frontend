@@ -32,15 +32,10 @@ class SignUpEmailViewController: UIViewController {
             networking.post("/auth/register", parameters: ["email" : email]) { result in
                // Successfull post using `application/json` as `Content-Type`
                 switch result {
-                case .success(let response):
-                    print("success", response.data)
-                    let json = response.dictionaryBody
-                    print("json**", response.statusCode)
-                    let arrayBody = response.arrayBody
-                    print("headers***", arrayBody)
-                    
+                case .success:
+                    print("succsseeeeee")
+                self.performSegue(withIdentifier: "confirmationCode", sender: self)
                 case .failure(let response):
-                    
                     let errorCode: Int = response.error.code
                     if (errorCode == 422) {
                         self.displayError()
@@ -48,9 +43,16 @@ class SignUpEmailViewController: UIViewController {
                 }
 
             }
-            print("going ahead")
         }
      
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        let secondViewController = segue.destination as! EmailConfirmationViewController
+        
+        // set a variable in the second view controller with the String to pass
+        secondViewController.receivedString = email
     }
     
     

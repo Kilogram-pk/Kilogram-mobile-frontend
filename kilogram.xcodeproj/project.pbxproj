@@ -16,6 +16,7 @@
 		1837167C2523A13700225032 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1837167B2523A13700225032 /* SignUp.storyboard */; };
 		18538CC62523A49A000DF175 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18538CC52523A49A000DF175 /* SignUpViewController.swift */; };
 		18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18668E4F252061DA002214FA /* ForgotPassword.storyboard */; };
+		186CE22125445EBC009A20B4 /* EmailConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CE22025445EBC009A20B4 /* EmailConfirmationViewController.swift */; };
 		188625BD253438D4008735D6 /* ForgotPassEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188625BC253438D4008735D6 /* ForgotPassEmail.swift */; };
 		18881D4D25209F9200449B6A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18881D4C25209F9200449B6A /* TabViewController.swift */; };
 		189760672536D5FA00F1A592 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189760662536D5FA00F1A592 /* SignUp.swift */; };
@@ -61,6 +62,7 @@
 		1837167B2523A13700225032 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		18538CC52523A49A000DF175 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		18668E4F252061DA002214FA /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		186CE22025445EBC009A20B4 /* EmailConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailConfirmationViewController.swift; sourceTree = "<group>"; };
 		188625BC253438D4008735D6 /* ForgotPassEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassEmail.swift; sourceTree = "<group>"; };
 		18881D4C25209F9200449B6A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		18881D4E2520A05E00449B6A /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +175,7 @@
 				18538CC52523A49A000DF175 /* SignUpViewController.swift */,
 				189760662536D5FA00F1A592 /* SignUp.swift */,
 				189760682536D98D00F1A592 /* SignUpEmailViewController.swift */,
+				186CE22025445EBC009A20B4 /* EmailConfirmationViewController.swift */,
 			);
 			path = signUp;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				18881D4D25209F9200449B6A /* TabViewController.swift in Sources */,
 				182A1D53254160DF0092C3DD /* File.swift in Sources */,
 				1825C4032534860C0070AD83 /* ForgotPassPhone.swift in Sources */,
+				186CE22125445EBC009A20B4 /* EmailConfirmationViewController.swift in Sources */,
 				18A81E05251B79FC00EB5904 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
