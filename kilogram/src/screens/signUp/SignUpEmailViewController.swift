@@ -52,7 +52,7 @@ class SignUpEmailViewController: UIViewController {
         let secondViewController = segue.destination as! EmailConfirmationViewController
         
         // set a variable in the second view controller with the String to pass
-        secondViewController.receivedString = email
+        secondViewController.userEmail = email
     }
     
     

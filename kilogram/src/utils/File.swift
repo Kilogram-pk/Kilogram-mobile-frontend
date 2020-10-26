@@ -21,4 +21,5 @@ class validation {
         textField.layer.borderWidth = 1;
         textField.layer.borderColor = CGColor(srgbRed: 255/255, green: 0/255, blue: 0/255, alpha: 0.7)
     }
+    
 }
