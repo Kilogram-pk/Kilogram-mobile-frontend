@@ -10,13 +10,20 @@ import UIKit
 
 class createPasswordViewController: UIViewController {
 
+    var password: String = "";
+    
     @IBOutlet weak var checkbox: CheckBox!
+    @IBAction func onPassEdit(_ sender: UITextField) {
+    }
+    @IBAction func onNextPressed(_ sender: UIButton) {
+    }
+    
+    var userName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("view loaded", checkbox!.isChecked)
         // Do any additional setup after loading the view.
     }
-    
     
 }

@@ -20,6 +20,9 @@
 		18538CC62523A49A000DF175 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18538CC52523A49A000DF175 /* SignUpViewController.swift */; };
 		18668E50252061DA002214FA /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18668E4F252061DA002214FA /* ForgotPassword.storyboard */; };
 		186CE22125445EBC009A20B4 /* EmailConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CE22025445EBC009A20B4 /* EmailConfirmationViewController.swift */; };
+		187CD2E6254ED9C1004563BD /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187CD2E5254ED9C1004563BD /* api.swift */; };
+		187CD2E8254EE00D004563BD /* ErrorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187CD2E7254EE00D004563BD /* ErrorLabel.swift */; };
+		187CD2EA254F25F2004563BD /* dobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187CD2E9254F25F2004563BD /* dobViewController.swift */; };
 		188625BD253438D4008735D6 /* ForgotPassEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188625BC253438D4008735D6 /* ForgotPassEmail.swift */; };
 		18881D4D25209F9200449B6A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18881D4C25209F9200449B6A /* TabViewController.swift */; };
 		189760672536D5FA00F1A592 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189760662536D5FA00F1A592 /* SignUp.swift */; };
@@ -69,6 +72,9 @@
 		18538CC52523A49A000DF175 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		18668E4F252061DA002214FA /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		186CE22025445EBC009A20B4 /* EmailConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailConfirmationViewController.swift; sourceTree = "<group>"; };
+		187CD2E5254ED9C1004563BD /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		187CD2E7254EE00D004563BD /* ErrorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLabel.swift; sourceTree = "<group>"; };
+		187CD2E9254F25F2004563BD /* dobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dobViewController.swift; sourceTree = "<group>"; };
 		188625BC253438D4008735D6 /* ForgotPassEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassEmail.swift; sourceTree = "<group>"; };
 		18881D4C25209F9200449B6A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		18881D4E2520A05E00449B6A /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +190,8 @@
 				186CE22025445EBC009A20B4 /* EmailConfirmationViewController.swift */,
 				1820CC5C25488E6A00EC0106 /* UserNameViewController.swift */,
 				1841EADE254B0D4C0006312D /* createPasswordViewController.swift */,
+				187CD2E5254ED9C1004563BD /* api.swift */,
+				187CD2E9254F25F2004563BD /* dobViewController.swift */,
 			);
 			path = signUp;
 			sourceTree = "<group>";
@@ -215,6 +223,7 @@
 				18A7F8912522FE550093BCF4 /* TextFieldController.swift */,
 				18A7F89325232F930093BCF4 /* ButtonController.swift */,
 				1841EADC254AFAB50006312D /* CheckBox.swift */,
+				187CD2E7254EE00D004563BD /* ErrorLabel.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -482,7 +491,9 @@
 				18A81E07251B79FC00EB5904 /* ViewController.swift in Sources */,
 				18538CC62523A49A000DF175 /* SignUpViewController.swift in Sources */,
 				18A7F89425232F930093BCF4 /* ButtonController.swift in Sources */,
+				187CD2E6254ED9C1004563BD /* api.swift in Sources */,
 				189760692536D98D00F1A592 /* SignUpEmailViewController.swift in Sources */,
+				187CD2EA254F25F2004563BD /* dobViewController.swift in Sources */,
 				1820CC5D25488E6A00EC0106 /* UserNameViewController.swift in Sources */,
 				189760672536D5FA00F1A592 /* SignUp.swift in Sources */,
 				188625BD253438D4008735D6 /* ForgotPassEmail.swift in Sources */,
@@ -491,6 +502,7 @@
 				1841EADF254B0D4C0006312D /* createPasswordViewController.swift in Sources */,
 				18A81E03251B79FC00EB5904 /* AppDelegate.swift in Sources */,
 				18881D4D25209F9200449B6A /* TabViewController.swift in Sources */,
+				187CD2E8254EE00D004563BD /* ErrorLabel.swift in Sources */,
 				182A1D53254160DF0092C3DD /* File.swift in Sources */,
 				1825C4032534860C0070AD83 /* ForgotPassPhone.swift in Sources */,
 				186CE22125445EBC009A20B4 /* EmailConfirmationViewController.swift in Sources */,

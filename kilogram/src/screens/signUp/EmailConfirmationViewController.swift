@@ -25,7 +25,6 @@ class EmailConfirmationViewController: UIViewController {
     @IBOutlet weak var validationHeight: NSLayoutConstraint!
     @IBOutlet weak var codeTextField: UITextField!
     @IBAction func onButtonPressed(_ sender: UIButton) {
-        print("in", code)
         if(code != "") {
             let networking = Networking(baseURL: "https://hasnat.tk/api")
             networking.post("/auth/verify-code", parameters: ["email" : userEmail, "verification_key": code]) { result in
