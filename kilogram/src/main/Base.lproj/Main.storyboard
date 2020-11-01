@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C6r-VT-QZW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DJF-rp-umm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -628,7 +628,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6vJ-aF-tSM">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6vJ-aF-tSM" customClass="TextFieldController" customModule="kilogram" customModuleProvider="target">
                                 <rect key="frame" x="20" y="226" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -710,9 +710,113 @@
             </objects>
             <point key="canvasLocation" x="3908.6956521739135" y="1597.7678571428571"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="vbV-jF-O6h">
+            <objects>
+                <viewController id="DJF-rp-umm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bC5-lG-2sh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake" translatesAutoresizingMaskIntoConstraints="NO" id="Jxd-xg-4zj">
+                                <rect key="frame" x="20" y="91" width="374" height="116"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your date of birth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cr8-z0-D8d">
+                                <rect key="frame" x="20" y="227" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="H1D-py-8VO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This wont be part of your public profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWa-qo-DwV">
+                                <rect key="frame" x="20" y="288" width="374" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x4F-t6-Ohf">
+                                <rect key="frame" x="20" y="352" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use your own date of birth, even if this account is for a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oi6-fa-g73">
+                                <rect key="frame" x="20" y="444" width="361" height="18"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="businees, pet or something else." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jk0-hJ-aPI">
+                                <rect key="frame" x="20" y="467" width="374" height="18"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCL-7C-GUJ">
+                                <rect key="frame" x="0.0" y="495" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dsa-iz-KMu"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKc-LO-DCu" customClass="ButtonController" customModule="kilogram" customModuleProvider="target">
+                                <rect key="frame" x="20" y="506" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.56862745100000001" blue="0.98039215690000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="8Iq-Jv-gQV"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WzX-uH-5Bh">
+                                <rect key="frame" x="0.0" y="561" width="414" height="301"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WzX-uH-5Bh" firstAttribute="trailing" secondItem="NjF-kd-RFM" secondAttribute="trailing" id="2qt-B0-Mdj"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="trailing" secondItem="x4F-t6-Ohf" secondAttribute="trailing" constant="20" id="9u2-c4-3bt"/>
+                            <constraint firstItem="Jxd-xg-4zj" firstAttribute="leading" secondItem="NjF-kd-RFM" secondAttribute="leading" constant="20" id="AFk-iU-sVx"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="trailing" secondItem="oi6-fa-g73" secondAttribute="trailing" constant="33" id="BQS-xP-QVt"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="trailing" secondItem="jk0-hJ-aPI" secondAttribute="trailing" constant="20" id="BXc-8m-yKw"/>
+                            <constraint firstItem="FCL-7C-GUJ" firstAttribute="top" secondItem="jk0-hJ-aPI" secondAttribute="bottom" constant="10" id="DhZ-ai-ljB"/>
+                            <constraint firstItem="jk0-hJ-aPI" firstAttribute="leading" secondItem="NjF-kd-RFM" secondAttribute="leading" constant="20" id="EIp-pl-neK"/>
+                            <constraint firstItem="oi6-fa-g73" firstAttribute="leading" secondItem="NjF-kd-RFM" secondAttribute="leading" constant="20" id="KcB-DB-h7U"/>
+                            <constraint firstItem="BKc-LO-DCu" firstAttribute="top" secondItem="FCL-7C-GUJ" secondAttribute="bottom" constant="10" id="LXE-4R-9jR"/>
+                            <constraint firstItem="WzX-uH-5Bh" firstAttribute="leading" secondItem="NjF-kd-RFM" secondAttribute="leading" id="Lii-tb-OIn"/>
+                            <constraint firstItem="x4F-t6-Ohf" firstAttribute="top" secondItem="FWa-qo-DwV" secondAttribute="bottom" constant="40" id="OTF-vB-33k"/>
+                            <constraint firstItem="cr8-z0-D8d" firstAttribute="top" secondItem="Jxd-xg-4zj" secondAttribute="bottom" constant="20" id="OtH-OJ-YNS"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="trailing" secondItem="Jxd-xg-4zj" secondAttribute="trailing" constant="20" id="PMb-78-wNw"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="bottom" secondItem="cr8-z0-D8d" secondAttribute="bottom" constant="604" id="Q66-wd-I1L"/>
+                            <constraint firstItem="x4F-t6-Ohf" firstAttribute="leading" secondItem="NjF-kd-RFM" secondAttribute="leading" constant="20" id="Rc0-98-nsQ"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="trailing" secondItem="FCL-7C-GUJ" secondAttribute="trailing" id="WXg-0z-5Yy"/>
+                            <constraint firstItem="WzX-uH-5Bh" firstAttribute="top" secondItem="BKc-LO-DCu" secondAttribute="bottom" constant="10" id="WdZ-WH-3T9"/>
+                            <constraint firstItem="FWa-qo-DwV" firstAttribute="leading" secondItem="NjF-kd-RFM" secondAttribute="leading" constant="20" id="Ytw-51-pY2"/>
+                            <constraint firstItem="jk0-hJ-aPI" firstAttribute="top" secondItem="oi6-fa-g73" secondAttribute="bottom" constant="5" id="Z7t-xB-C1T"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="trailing" secondItem="FWa-qo-DwV" secondAttribute="trailing" constant="20" id="ZAI-68-7Ug"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="bottom" secondItem="WzX-uH-5Bh" secondAttribute="bottom" id="ZjA-Qf-vVj"/>
+                            <constraint firstItem="cr8-z0-D8d" firstAttribute="leading" secondItem="NjF-kd-RFM" secondAttribute="leading" constant="20" id="ary-dy-I6I"/>
+                            <constraint firstItem="BKc-LO-DCu" firstAttribute="leading" secondItem="NjF-kd-RFM" secondAttribute="leading" constant="20" id="ccv-hi-CHF"/>
+                            <constraint firstItem="Jxd-xg-4zj" firstAttribute="top" secondItem="NjF-kd-RFM" secondAttribute="top" constant="47" id="drD-Yg-3ze"/>
+                            <constraint firstItem="oi6-fa-g73" firstAttribute="centerY" secondItem="NjF-kd-RFM" secondAttribute="centerY" id="g9d-fr-XRs"/>
+                            <constraint firstItem="FWa-qo-DwV" firstAttribute="top" secondItem="cr8-z0-D8d" secondAttribute="bottom" constant="30" id="mlg-1f-ioz"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="trailing" secondItem="cr8-z0-D8d" secondAttribute="trailing" constant="20" id="rQd-cK-JVB"/>
+                            <constraint firstItem="FCL-7C-GUJ" firstAttribute="leading" secondItem="NjF-kd-RFM" secondAttribute="leading" id="uRK-H7-1Oc"/>
+                            <constraint firstItem="NjF-kd-RFM" firstAttribute="trailing" secondItem="BKc-LO-DCu" secondAttribute="trailing" constant="20" id="zvP-oX-V29"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NjF-kd-RFM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CDZ-sE-2ZU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4718.840579710145" y="1596.4285714285713"/>
+        </scene>
     </scenes>
     <resources>
         <image name="backward" catalog="system" width="128" height="79"/>
+        <image name="cake" width="340" height="224"/>
         <image name="facebook_login" width="225" height="225"/>
     </resources>
 </document>
