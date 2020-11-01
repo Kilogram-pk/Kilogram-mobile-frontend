@@ -31,6 +31,7 @@ class EmailConfirmationViewController: UIViewController {
             networking.post("/auth/verify-code", parameters: ["email" : userEmail, "verification_key": code]) { result in
                   switch result {
                   case .success (let response):
+                    self.performSegue(withIdentifier: "signupUsername", sender: self)
                     print("api result", response.statusCode)
                   case .failure(let response):
                       let errorCode: Int = response.error.code
